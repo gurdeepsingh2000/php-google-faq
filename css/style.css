@@ -1,5 +1,6 @@
 .navbar{
-border: 3px solid black;
+    margin-top: 25px;
+    border-bottom: 1px solid grey;
 }
 
 .google-bar{
@@ -11,6 +12,10 @@ border: 3px solid black;
 .logo-container{
     height: 50px;
     width: 130px;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
 }
 
 .logo-container img{
@@ -37,6 +42,15 @@ border: 3px solid black;
 
 .menu-list{
     width: 30%;
+    color: grey;
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid transparent;    
+}
+
+.menu-list ul li:hover{
+    color: #3367d6;
+    border-bottom: 3px solid #3367d6;
 }
 
 .menu-list ul{
@@ -48,11 +62,23 @@ border: 3px solid black;
 .main{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .text-container{
     width: 70%;
+
 }
+
+.question{
+    margin-top: 90px;
+}
+
+.sub-paragraph{
+    margin-top: 70px;
+}
+
+
 
 
 
