@@ -111,6 +111,7 @@ $paragraphs = [
         
         <?php
         foreach($paragraphs as $element){?>
+
             <h2 class = "question"> 
             <?php echo "{$element['question']}" ?>
             </h2>
