@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <title>Document</title>
 </head>
 <body>
-
-
-
-
 
 <?php 
 
@@ -43,8 +41,8 @@ $paragraphs = [
     [
         "question" => "Why is my account associated with a country?",
         "answer" => "Your account is associated with a country (or territory) in the Terms of Service so that we can determine two things:
-            <ol type="1"><li>The Google affiliate that provides the services, that processes your information, and that is responsible for complying with applicable privacy laws.<br> Generally, Google offers its consumer services through either of two companies:<br><br></li>
-                <ol type="a"><li>Google Ireland Limited, if you’re located in the European Economic Area (EU countries plus Iceland, Liechtenstein, and Norway) or Switzerland</li>
+            <ol type='1'><li>The Google affiliate that provides the services, that processes your information, and that is responsible for complying with applicable privacy laws.<br> Generally, Google offers its consumer services through either of two companies:<br><br></li>
+                <ol type='a'><li>Google Ireland Limited, if you’re located in the European Economic Area (EU countries plus Iceland, Liechtenstein, and Norway) or Switzerland</li>
                         <li>Google LLC, based in the United States, for the rest of the world <br><br></li>
                     </ol>
                     <li>The version of the terms that govern our relationship, which can vary depending on local laws</li>
@@ -75,13 +73,60 @@ $paragraphs = [
         "answer" => "In some cases, yes. When you click on a search result in Google Search, your web browser also may send the Internet address, or URL, of the search results page to the destination webpage as the Referrer URL. The URL of the search results page may sometimes contain the search query you entered. If you are using SSL Search (Google’s encrypted search functionality), under most circumstances, your search terms will not be sent as part of the URL in the Referrer URL. There are some exceptions to this behavior, such as if you are using some less popular browsers. More information on SSL Search can be found here. Search queries or information contained in the Referrer URL may be available via Google Analytics or an application programming interface (API). In addition, advertisers may receive information relating to the exact keywords that triggered an ad click."
     ],
 ];
-
-
-foreach($paragraphs as $element){
-    echo "{$element['question']} <br> <br> {$element['answer']} . <br><br>";
-}
-
 ?>
+
+
+    <div class="navbar">
+
+        <div class="google-bar">
+
+                <div class="logo-container"> 
+                    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="">
+                </div>
+
+                <div class="block-menu">
+
+                     <i class="fas fa-ellipsis-v"></i>
+                     <i class="fas fa-ellipsis-v"></i>
+                     <i class="fas fa-ellipsis-v"></i>
+                     
+                <div class="user-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1200px-Google_Chrome_icon_%28September_2014%29.svg.png">
+                </div>
+            </div>
+        </div>
+                
+            <div class = "menu-list">
+                <ul>
+                    <li>Overview</li>
+                    <li>Privacy & Policy</li>
+                    <li>Terms Of Service</li>
+                    <li>Technologies</li>
+                    <li>FAQ</li>
+                </ul>
+             </div>
+    </div>
+
+
+
+
+<div class="main">
+    <div class="text-container">
+        
+        <?php
+        foreach($paragraphs as $element){?>
+            <h2 class = "question"> 
+            <?php echo "{$element['question']}" ?>
+            </h2>;
+
+            <p><?php echo "{$element['answer']}"?></p>
+            <?php
+        }
+    ?>
+</div>
+
+</div>
+
     
 </body>
 </html>
